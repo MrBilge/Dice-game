@@ -1,0 +1,101 @@
+.container {
+  width: 70%;
+  margin: auto;
+  text-align: center;
+}
+
+.dice {
+  text-align: center;
+  display: inline-block;
+
+}
+
+body {
+  background-color:   rgb(131,58,180);
+  background: linear-gradient(90deg, rgba(131,58,180,1) 0%, rgba(253,29,29,1) 50%, rgba(252,176,69,1) 100%);
+}
+
+h1 {
+  margin: 30px;
+  font-family: 'Lobster', cursive;
+  text-shadow: 5px 0 #232931;
+  font-size: 8rem;
+  color: #20c58e;
+}
+
+p {
+  font-size: 2rem;
+  color: #4ECCA3;
+  font-family: 'Indie Flower', cursive;
+}
+
+img {
+  width: 80%;
+}
+
+footer {
+  margin-top: 5%;
+  color: #EEEEEE;
+  text-align: center;
+  font-family: 'Indie Flower', cursive;
+
+}
+  #rollButton{   
+    display: block;
+    margin:  auto;
+   text-align: center;
+    width: fit-content; /* Butonun içeriğine uygun genişlik */
+    position: relative;
+    left: 120px;
+    width: 150px;
+    height: 100px;
+    background-color:#4ECCA3;
+    border-radius: 10px;
+    font-size: 20px;
+    font-weight: bold;
+   
+  }
+  
+  @media screen and (max-width: 768px) {
+    /*  */
+    #rollButton {
+      left: 0; /* Buttonu sola daya */
+      transform: none; /* Önceki transform'u iptal et */
+    }
+  }
+     
+     Button i.fa-solid {
+    vertical-align: middle; /* İkonu dikeyde ortalar */
+  }
+  
+  #rollButton span {
+    vertical-align: middle; /* Metni dikeyde ortalar */
+    margin-left: 5px; /* Metin ile ikon arasında bir boşluk bırakır */
+  }
+     
+
+  .dice-image {
+    transition: transform 0.5s ease; /* Geçiş animasyonu eklemek için */
+  }
+  
+  .roll-animation {
+    animation: roll 1s ease-in-out; /* Zar atma animasyonu */
+  }
+  
+  @keyframes roll {
+    0% {
+      transform: rotate(0deg);
+    }
+    100% {
+      transform: rotate(360deg);
+    }
+  }
+  
+
+  
+  
+  
+  
+  
+  
+  
